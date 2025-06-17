@@ -5,6 +5,7 @@
   --skills-background: #0e0e0e;
   --experience-background: #121212;
   --hero-background: #1a0f0f;
+  --projects-background: #121212;
 }
 
 .gradient-spacer::after {

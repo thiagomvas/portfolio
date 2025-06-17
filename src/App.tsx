@@ -24,6 +24,12 @@ function App() {
         }}
       ></div>
       <Skills/>
+      <div
+        className="gradient-spacer"
+        style={{
+          background: "linear-gradient(to bottom, var(--skills-background), var(--projects-background))",
+        }}
+      ></div>
       <Projects/>
     </>
   )

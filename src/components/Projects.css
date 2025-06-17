@@ -1,5 +1,6 @@
 .projects {
     padding: 4rem;
+    background: var(--projects-background);
   }
   
   .projects-grid {
@@ -75,6 +76,11 @@
     flex-wrap: wrap;
     gap: 0.4rem;
   }
+  .project-stack img {
+    width: auto;
+    height: auto;
+    max-width: none; /* Prevent shrinking */
+  }
   
   /* Stack item styling */
   .stack-item {
@@ -85,9 +91,36 @@
     font-size: 0.7rem;
     color: #ddd;
   }
+  .stars {
+    font-size: 0.7rem;
+    padding: 0.2remc;
+    color: #ddd;
+  }
   
   .project-card-link {
     text-decoration: none;
     color: inherit;
   }
+  .project-stack-container {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .project-meta {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #ddd;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+  
+  .project-meta img {
+    height: 1.2rem;
+    width: auto;
+  }
+  
+  
+  
   
