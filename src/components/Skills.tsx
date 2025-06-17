@@ -3,9 +3,12 @@ import { skillCategories } from '../lib/skills';
 
 export default function Skills() {
   return (
+    <div className='skills'>
+      <h1 className='section-header'>Skills & Technologies</h1>
+
     <section className="skills-grid">
       {skillCategories.map((category, i) => (
-        <div className="skill-card" key={i}>
+        <div className="skill-card" style={{background: category.background}} key={i}>
           <h3>{category.label}</h3>
           <div className="skill-items">
             {category.skills.map((skill, j) => (
@@ -18,5 +21,7 @@ export default function Skills() {
         </div>
       ))}
     </section>
+    </div>
+
   );
 }

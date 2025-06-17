@@ -6,6 +6,7 @@ export type Skill = {
   export type SkillCategory = {
     label: string;
     skills: Skill[];
+    background?: string; // Optional background color or image
   };
 
 export const skillCategories: SkillCategory[] = [
@@ -21,6 +22,7 @@ export const skillCategories: SkillCategory[] = [
       { name: 'Dart', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dart/dart-original.svg' },
 
     ],
+    background: 'rgba(142, 68, 173, 0.08)'
   },
   {
     label: 'Frameworks & Libraries',
@@ -35,6 +37,7 @@ export const skillCategories: SkillCategory[] = [
       { name: 'Blazor', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/blazor/blazor-original.svg' },
       { name: 'Flutter', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg' },
     ],
+    background: 'rgba(63, 81, 181, 0.08)'
   },
   {
     label: 'Cloud & Infrastructure',
@@ -43,7 +46,9 @@ export const skillCategories: SkillCategory[] = [
       { name: 'Firebase', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg' },
       { name: 'Redis', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg' },
       { name: 'RabbitMQ', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rabbitmq/rabbitmq-original.svg' },
+      { name: 'Docker', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg' },
     ],
+    background: 'rgba(22, 160, 133, 0.08)'
   },
   {
     label: 'Databases',
@@ -52,5 +57,6 @@ export const skillCategories: SkillCategory[] = [
       { name: 'MongoDB', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg' },
       { name: 'SQLite', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg' },
     ],
+    background: 'rgba(192, 57, 43, 0.08)'
   },
 ];

@@ -1,8 +1,6 @@
 .experience {
     padding: 4rem;
     background-color: var(--experience-background);
-    color: #ffffff;
-    font-family: 'Poppins', sans-serif;
   }
   
   .experience-header {

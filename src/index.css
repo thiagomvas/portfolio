@@ -22,6 +22,7 @@ html, body {
   box-sizing: border-box;
   height: 100%;
   font-family: 'Poppins', sans-serif;
+  color: #ffffff;
   background-color: #121212;
 }
 
@@ -29,4 +30,9 @@ html, body {
   fill: white !important;    /* for SVG fill */
   color: white !important;   /* for font/icon fonts */
   filter: brightness(0) invert(1); /* fallback for img/svg without fill */
+}
+
+.section-header {
+  color: white;
+  font-size: 2rem;
 }
