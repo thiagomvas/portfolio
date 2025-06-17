@@ -7,7 +7,15 @@ import ForkSvg from '/fork.svg';
 import React, { useEffect, useState } from "react";
 
 export default function Projects() {
-  const [stats, setStats] = useState<{ [key: string]: { stars: number; forks: number } }>({});
+  const initialStats = projects.reduce((acc, proj) => {
+    acc[proj.repoFullName ?? proj.name] = {
+      stars: proj.stars ?? 0,
+      forks: proj.forks ?? 0,
+    };
+    return acc;
+  }, {} as Record<string, { stars: number; forks: number }>);
+
+  const [stats, setStats] = useState(initialStats);
 
   useEffect(() => {
     projects.forEach((project) => {
@@ -16,16 +24,18 @@ export default function Projects() {
       fetch(`https://api.github.com/repos/${project.repoFullName}`)
         .then((res) => res.json())
         .then((data) => {
-          setStats((prev) => ({
-            ...prev,
-            [project.repoFullName]: {
-              stars: data.stargazers_count,
-              forks: data.forks_count,
-            },
-          }));
+          if (data.stargazers_count !== undefined && data.forks_count !== undefined) {
+            setStats((prev) => ({
+              ...prev,
+              [project.repoFullName]: {
+                stars: data.stargazers_count,
+                forks: data.forks_count,
+              },
+            }));
+          }
         })
         .catch(() => {
-          // handle errors if needed
+          // On error, do nothing, fallback remains in state
         });
     });
   }, []);
@@ -56,15 +66,15 @@ export default function Projects() {
                 <p className="project-description">{project.description}</p>
                 <div className="project-stack-container">
                   <div className="project-meta">
-                    {projectStats?.stars > 0 && (
+                    {projectStats && projectStats?.stars > 0 && (
                       <>
                         <img src={StarSvg} alt="stars" /> {projectStats.stars}
                         &nbsp;&nbsp;
                       </>
                     )}
-                    {projectStats?.forks > 0 && (
+                    {projectStats && projectStats?.forks > 0 && (
                       <>
-                        <img src={ForkSvg} alt="forks" /> {projectStats.forks}
+                        <img src={ForkSvg} alt="forks" /> {projectStats!.forks}
                       </>
                     )}
                   </div>
