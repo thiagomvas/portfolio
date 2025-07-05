@@ -56,7 +56,6 @@ export default function Navbar({ pageSections }: NavbarProps) {
         ))}
       </div>
       <div className="navbar-right">
-        <a href="/tools" className="nav-link">Tools & Setup</a>
       </div>
     </nav>
   );
