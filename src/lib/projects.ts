@@ -11,6 +11,12 @@ export type Project = {
 
 export const projects: Project[] = [
     {
+        name: "FFlow",
+        repoFullName: "thiagomvas/FFlow",
+        description: "FFlow is a lightweight, extensible workflow automation library for .NET with fluent, code-first syntax. Built for CI/CD, DevOps, and backend orchestration, it supports dependency injection, branching logic, and step decorators—no XML or DSL required. ",
+        stack: "C#"
+    },
+    {
       name: "Seederly",
       repoFullName: "thiagomvas/Seederly",
       description: "Seederly is a modern API tester, but smarter. It lets you create, test, and send HTTP requests while automatically generating realistic, structured, and schema-based fake data, with none of that AI bloat.",
