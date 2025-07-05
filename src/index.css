@@ -2,10 +2,12 @@
 
 :root {
   --primary: #f15c5c;
+  --secondary: #c94f4f;
   --skills-background: #0e0e0e;
   --experience-background: #121212;
   --hero-background: #1a0f0f;
   --projects-background: #121212;
+  --footer-background: #1a1a1a;
 }
 
 .gradient-spacer::after {

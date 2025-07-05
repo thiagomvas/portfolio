@@ -1,4 +1,5 @@
 import './Hero.css';
+import { links } from '../lib/links';
 
 export default function Hero() {
   return (
@@ -12,10 +13,10 @@ export default function Hero() {
           {/* Social Icons */}
           <div className='social-row'>
             <div className="social-links">
-              <a href="https://github.com/thiagomvas" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <a href={links.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub">
               <img className='white-icon' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="Thiago Vasconcelos" width={32} height={32} />
               </a>
-              <a href="https://www.linkedin.com/in/thiago-m-vasconcelos/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <a href={links.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
               <img className='white-icon' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg" alt="Thiago Vasconcelos" width={32} height={32} />
               </a>
             </div>
