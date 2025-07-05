@@ -1,7 +1,7 @@
 import './Projects.css';
 import './../lib/projects';
 import { projects } from './../lib/projects';
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import ProjectCard from './ProjectCard';
 
 export default function Projects() {

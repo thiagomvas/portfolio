@@ -1,4 +1,3 @@
-import React from "react";
 import RepoSvg from '/repo.svg';
 import StarSvg from '/star.svg';
 import ForkSvg from '/fork.svg';
