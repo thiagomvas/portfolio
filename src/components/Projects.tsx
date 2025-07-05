@@ -37,7 +37,7 @@ export default function Projects() {
   }, []);
 
   return (
-    <div className="projects">
+    <section className="projects" id="projects">
       <h1 className="section-header">Projects</h1>
       <div className="projects-grid">
         {projects.map((project, i) => {
@@ -51,6 +51,6 @@ export default function Projects() {
           );
         })}
       </div>
-    </div>
+    </section>
   );
 }

@@ -3,10 +3,10 @@ import { skillCategories } from '../lib/skills';
 
 export default function Skills() {
   return (
-    <div className='skills'>
+    <section className='skills' id='skills'>
       <h1 className='section-header'>Skills & Technologies</h1>
 
-    <section className="skills-grid">
+    <div className="skills-grid">
       {skillCategories.map((category, i) => (
         <div className="skill-card" style={{background: category.background}} key={i}>
           <h3>{category.label}</h3>
@@ -20,8 +20,8 @@ export default function Skills() {
           </div>
         </div>
       ))}
-    </section>
     </div>
+    </section>
 
   );
 }

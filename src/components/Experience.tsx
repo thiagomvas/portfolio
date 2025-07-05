@@ -3,7 +3,7 @@ import {experiences, formatDateRange} from './../lib/experience';
 
 export default function Experience() {
   return (
-    <section className="experience">
+    <section className="experience" id="experience">
       <h1 className='section-header'>Work Experience</h1>
       {experiences.map((exp, index) => (
         <div key={index} className="company-block">

@@ -3,7 +3,7 @@ import { links } from '../lib/links';
 
 export default function Hero() {
   return (
-    <section className="hero">
+    <section className="hero" id="hero">
       <div className="hero-container">
         {/* Text Section */}
         <div className="hero-text">
