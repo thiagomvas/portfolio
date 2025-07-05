@@ -78,8 +78,8 @@
   .hero-image img {
     width: 400px;
     height: auto;
-    border-radius: 0.5rem;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    z-index: 0;
+    border-radius: 9999px;
   }
   
   .social-row {
@@ -92,7 +92,9 @@
   }
 
   .cv-download select {
-    background: #f15c5c;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 999px;
     color: white;
     border: none;
     padding: 0.5rem 1rem;
@@ -102,5 +104,5 @@
   }
   
   .cv-download select:hover {
-    background: #e04b4b;
+    background: transparent;
   }

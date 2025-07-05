@@ -4,9 +4,9 @@ export type Project = {
     description: string,
     logoUrl?: string,
     stack: string,
-    repoUrl?: string,
     stars?: number,
     forks?: number,
+    tryItOutUrl?: string,
 }
 
 export const projects: Project[] = [
@@ -15,7 +15,6 @@ export const projects: Project[] = [
       repoFullName: "thiagomvas/Seederly",
       description: "Seederly is a modern API tester, but smarter. It lets you create, test, and send HTTP requests while automatically generating realistic, structured, and schema-based fake data, with none of that AI bloat.",
       stack: "C#, Avalonia UI",
-      repoUrl: "https://www.google.com",
       stars: 1,
       forks: 1,
     },

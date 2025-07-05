@@ -45,7 +45,7 @@ export default function Hero() {
 
         {/* Image Section */}
         <div className="hero-image">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="Thiago Vasconcelos" width={400} height={400} />
+          <img src="/pfp.jpg" alt="Thiago Vasconcelos" width={400} height={400} />
         </div>
       </div>
     </section>
