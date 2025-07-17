@@ -7,14 +7,19 @@ export type Project = {
     stars?: number,
     forks?: number,
     tryItOutUrl?: string,
+    featured?: boolean,
+    backgroundUrl?: string,
 }
+
 
 export const projects: Project[] = [
     {
         name: "FFlow",
         repoFullName: "thiagomvas/FFlow",
         description: "FFlow is a lightweight, extensible workflow automation library for .NET with fluent, code-first syntax. Built for CI/CD, DevOps, and backend orchestration, it supports dependency injection, branching logic, and step decorators—no XML or DSL required. ",
-        stack: "C#"
+        stack: "C#",
+        featured: true,
+        backgroundUrl: "./fflow.png",
     },
     {
       name: "Seederly",

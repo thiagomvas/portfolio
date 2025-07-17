@@ -4,8 +4,8 @@ import Hero from './components/Hero'
 import Navbar from './components/Navbar'
 import Projects from './components/Projects'
 import Skills from './components/Skills'
-import LogoSvg from '/icon.svg'
 import "./index.css"
+import FeaturedProjects from './components/FeaturedProjects'
 
 
 function App() {
@@ -38,6 +38,7 @@ function App() {
           background: "linear-gradient(to bottom, var(--skills-background), var(--projects-background))",
         }}
       ></div>
+      <FeaturedProjects/>
       <Projects/>
       <Footer/>
     </>

@@ -22,25 +22,32 @@ export default function Hero() {
             </div>
 
             <div className="cv-download">
-              <select
-                value="" // Always shows the default text
-                onChange={(e) => {
-                  const url = e.target.value;
-                  if (url) {
-                    const link = document.createElement('a');
-                    link.href = url;
-                    link.download = url.split('/').pop()!; // sets filename
-                    document.body.appendChild(link);
-                    link.click();
-                    document.body.removeChild(link);
-                  }
+              <button
+                onClick={() => {
+                  const link = document.createElement('a');
+                  link.href = '/cv_english.pdf';
+                  link.download = 'cv_english.pdf';
+                  document.body.appendChild(link);
+                  link.click();
+                  document.body.removeChild(link);
                 }}
               >
-                <option value="" disabled>Download CV</option>
-                <option value="/cv_english.pdf">English</option>
-                <option value="/cv_portugues.pdf">Português</option>
-              </select>
+                Download CV (English)
+              </button>
+              <button
+                onClick={() => {
+                  const link = document.createElement('a');
+                  link.href = '/cv_portugues.pdf';
+                  link.download = 'cv_portugues.pdf';
+                  document.body.appendChild(link);
+                  link.click();
+                  document.body.removeChild(link);
+                }}
+              >
+                Download CV (Português)
+              </button>
             </div>
+
           </div>
         </div>
 
